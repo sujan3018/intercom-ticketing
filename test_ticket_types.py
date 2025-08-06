@@ -24,7 +24,7 @@ def load_ticket_type_ids():
         print(f"❌ Error loading ticket type IDs: {str(e)}")
         return {}
 
-def create_ticket(ticket_type_name, ticket_type_id, customer_email="test@example.com"):
+def create_ticket(ticket_type_name, ticket_type_id, customer_email="test@example.com") -> int :
     """Create a new ticket"""
     url = "https://api.intercom.io/tickets"
     
@@ -98,7 +98,7 @@ def main():
             time.sleep(1)
             
             # TODO add a reply to the ticket, alex working on this
-            
+            # pass in the ticket id into the reply function TODO
         
         print("-" * 40)
     
