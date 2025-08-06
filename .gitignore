@@ -1,2 +1,4 @@
 .env
 venv/
+created_test_tickets.json
+ticket_type_ids.json
